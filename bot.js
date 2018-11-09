@@ -2,7 +2,7 @@ onst Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(Ready for dedth!);
+  console.log("Ready for dedth!");
 });
 
 client.on('message', msg => { 
