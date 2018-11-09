@@ -11,15 +11,15 @@ bot.on('message', msg => {
   var answer = ["yes", "no", "maybe", "that's classified", "nope", "yep"];
 
   if (command.includes( ['sunao ni'] )){
-      msg.reply('I LOVE YOU!');
+      msg.channel.send('I LOVE YOU!');
       }
 
-      if (command.includes( ['hey tani i love you'] )){
+  else if (command.includes( ['hey tani i love you'] )){
         msg.react('💙');
         }
 
   else if ( command.startsWith(['hey'])  && command.endsWith(['?']) ){
-      msg.reply(answer[Math.floor(Math.random()*answer.length)]);
+      msg.channel.send(answer[Math.floor(Math.random()*answer.length)]);
       }
   });
 
