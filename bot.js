@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-  console.log("Ready for dedth!");
+bot.on('ready', () => {
+  console.log('Ready for dedth!');
 });
 
-client.on('message', msg => { 
+bot.on('message', msg => { 
 
   var command = msg.content.toLowerCase()
   var answer = ["yes", "no", "maybe", "that's classified", "nope", "yep"];
@@ -24,4 +24,4 @@ client.on('message', msg => {
   });
 
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
